@@ -94,7 +94,9 @@ const Index = () => {
           <h2 className="section-title text-center mb-16">
             WITH AN EXPERIENCED TEAM<br />TO SUPPORT YOU
           </h2>
-          <ClientGrid section="COMPANY WE KEEP" />
+          <div className="max-w-7xl mx-auto">
+            <ClientGrid section="COMPANY WE KEEP" subsection="RELEVANT PAST" />
+          </div>
         </div>
       </section>
       
