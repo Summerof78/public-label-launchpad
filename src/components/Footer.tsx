@@ -1,4 +1,3 @@
-
 import { Mail, Phone, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -8,7 +7,15 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12">
           <div>
-            <h3 className="text-xl font-bold mb-4">PUBLIC LABEL</h3>
+            <div className="mb-4">
+              <Link to="/">
+                <img 
+                  src="/lovable-uploads/54d6adae-46d3-456d-93ae-6585af92f0c2.png"
+                  alt="PUBLIC LABEL" 
+                  className="h-10 w-auto"
+                />
+              </Link>
+            </div>
             <p className="text-muted-foreground mb-4">
               A full-service commerce agency designed to fuel growth at every touchpoint.
             </p>

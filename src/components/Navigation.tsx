@@ -41,9 +41,14 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center">
-            <h1 className="text-xl md:text-2xl font-black tracking-tight">
-              PUBLIC LABEL
-            </h1>
+            {/* Replace text logo with image logo */}
+            <a href="/" className="h-10">
+              <img 
+                src={isScrolled ? "/lovable-uploads/54d6adae-46d3-456d-93ae-6585af92f0c2.png" : "/lovable-uploads/805585be-5b17-45e5-8558-16bef169ff09.png"}
+                alt="Public Label" 
+                className="h-full w-auto" 
+              />
+            </a>
           </div>
           
           {/* Desktop Navigation */}
