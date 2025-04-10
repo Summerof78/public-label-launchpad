@@ -47,7 +47,7 @@ const Index = () => {
       {/* Hero Section */}
       <section 
         className="h-screen flex items-center justify-center bg-cover bg-center bg-fixed pt-16"
-        style={{ backgroundImage: "url('/public/lovable-uploads/d21677c8-187f-4e0c-95c9-71bd79cb8960.png')" }}
+        style={{ backgroundImage: "url('/public/lovable-uploads/a65e9b92-11f5-404e-9de3-fc83205b7e83.png')" }}
       >
         <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
         <div className="container mx-auto px-6 relative text-white text-center">
@@ -457,3 +457,4 @@ const Index = () => {
 };
 
 export default Index;
+
