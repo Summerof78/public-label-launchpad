@@ -7,11 +7,12 @@ const HeroSection = () => {
       className="relative h-screen flex items-center justify-center overflow-hidden"
     >
       <div 
-        className="absolute inset-0 w-full h-full z-0"
+        className="absolute inset-0 w-full h-full z-0 bg-black"
         style={{ 
           backgroundImage: "url('/lovable-uploads/90822740-9b69-4502-a064-a1bb02d3f8ad.png')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
+          filter: 'brightness(0.8)'
         }}
       />
       
