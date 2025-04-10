@@ -55,13 +55,11 @@ const ClientGrid: React.FC<ClientProps> = ({ section, subsection }) => {
             style={{ gridColumn: client.x + 1, gridRow: client.y + 1 }}
           >
             <div className="h-16 flex items-center justify-center mb-2">
-              {/* When you upload actual logos, they'll replace the name display */}
-              {/* <img 
+              <img 
                 src={client.logo} 
                 alt={`${client.name} logo`} 
                 className="max-h-full max-w-full object-contain"
-              /> */}
-              <p className="text-center font-medium">{client.name}</p>
+              />
             </div>
           </div>
         ))}
