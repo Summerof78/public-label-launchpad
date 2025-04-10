@@ -1,57 +1,110 @@
 
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { cn } from '@/lib/utils';
+import { useMobile } from '@/hooks/use-mobile';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const isMobile = useMobile();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const navLinks = [
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '#about' },
+    { name: 'Capabilities', href: '#capabilities' },
+    { name: 'Growth Framework', href: '#growth-framework' },
+    { name: 'Clients', href: '#clients' },
+    { name: 'Contact', href: '#contact' },
+  ];
+
   return (
-    <nav className="py-4 px-6 md:px-10 fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="flex items-center">
-          <span className="text-xl font-bold tracking-tight uppercase">PUBLIC LABEL</span>
-        </Link>
-
-        <div className="hidden md:flex space-x-8">
-          <Link to="/" className="font-medium hover:text-primary transition-colors">Home</Link>
-          <Link to="/#about" className="font-medium hover:text-primary transition-colors">About</Link>
-          <Link to="/#capabilities" className="font-medium hover:text-primary transition-colors">Capabilities</Link>
-          <Link to="/#growth-framework" className="font-medium hover:text-primary transition-colors">Growth Framework</Link>
-          <Link to="/#clients" className="font-medium hover:text-primary transition-colors">Clients</Link>
-          <Link to="/#contact" className="font-medium hover:text-primary transition-colors">Contact</Link>
-        </div>
-
-        <button className="hidden md:block btn-primary">Get In Touch</button>
-
-        <button 
-          className="md:hidden text-2xl"
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <X /> : <Menu />}
-        </button>
-      </div>
-
-      {/* Mobile menu */}
-      {isOpen && (
-        <div className="fixed inset-0 top-16 bg-background z-40 md:hidden">
-          <div className="flex flex-col items-center justify-center h-full space-y-8 text-lg">
-            <Link to="/" className="font-medium" onClick={toggleMenu}>Home</Link>
-            <Link to="/#about" className="font-medium" onClick={toggleMenu}>About</Link>
-            <Link to="/#capabilities" className="font-medium" onClick={toggleMenu}>Capabilities</Link>
-            <Link to="/#growth-framework" className="font-medium" onClick={toggleMenu}>Growth Framework</Link>
-            <Link to="/#clients" className="font-medium" onClick={toggleMenu}>Clients</Link>
-            <Link to="/#contact" className="font-medium" onClick={toggleMenu}>Contact</Link>
-            <a href="#contact" className="btn-primary" onClick={toggleMenu}>Get In Touch</a>
+    <header className={cn(
+      'fixed top-0 left-0 w-full z-50 transition-all duration-300',
+      isScrolled ? 'bg-background/95 shadow-md backdrop-blur-sm' : 'bg-transparent'
+    )}>
+      <div className="container mx-auto px-6">
+        <div className="flex items-center justify-between py-4">
+          <div className="flex items-center">
+            <h1 className="text-xl md:text-2xl font-black tracking-tight">
+              PUBLIC LABEL
+            </h1>
           </div>
+          
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-6">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="text-sm font-medium hover:text-primary transition-colors"
+              >
+                {link.name}
+              </a>
+            ))}
+          </nav>
+
+          {/* CTA Button */}
+          <div className="hidden md:block">
+            <a 
+              href="#contact" 
+              className="bg-primary text-white px-4 py-2 rounded-md font-medium"
+            >
+              Get In Touch
+            </a>
+          </div>
+          
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden"
+            onClick={toggleMenu}
+            aria-label={isOpen ? 'Close Menu' : 'Open Menu'}
+          >
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+      </div>
+      
+      {/* Mobile Navigation */}
+      {isOpen && isMobile && (
+        <div className="md:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-sm shadow-lg">
+          <nav className="container mx-auto px-6 py-4 flex flex-col space-y-4">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="text-base font-medium py-2 hover:text-primary transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                {link.name}
+              </a>
+            ))}
+            <a 
+              href="#contact" 
+              className="bg-primary text-white px-4 py-2 rounded-md font-medium text-center mt-4"
+              onClick={() => setIsOpen(false)}
+            >
+              Get In Touch
+            </a>
+          </nav>
         </div>
       )}
-    </nav>
+    </header>
   );
 };
 

@@ -1,4 +1,3 @@
-
 import { useRef, useEffect } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -6,6 +5,7 @@ import ContactForm from '../components/ContactForm';
 import ClientGrid from '../components/ClientGrid';
 import CaseStudyCard from '../components/CaseStudyCard';
 import ServiceColumn from '../components/ServiceColumn';
+import HeroSection from '../components/HeroSection';
 
 const Index = () => {
   const animatedRefs = useRef<HTMLDivElement[]>([]);
@@ -45,24 +45,7 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section 
-        className="h-screen flex items-center justify-center bg-cover bg-center bg-fixed pt-16"
-        style={{ backgroundImage: "url('/public/lovable-uploads/a65e9b92-11f5-404e-9de3-fc83205b7e83.png')" }}
-      >
-        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
-        <div className="container mx-auto px-6 relative text-white text-center">
-          <h1 className="hero-text mb-6">
-            COMMERCE<br />IN MOTION
-          </h1>
-          <div className="max-w-2xl mx-auto">
-            <p className="text-xl">Driving growth through commerce innovation and strategically engineered creativity</p>
-          </div>
-          <div className="mt-10">
-            <a href="#contact" className="btn-primary mr-4">Contact Us</a>
-            <a href="#about" className="btn-outline">Learn More</a>
-          </div>
-        </div>
-      </section>
+      <HeroSection />
       
       {/* About Section */}
       <section id="about" className="py-24 bg-background" ref={addToRefs}>
@@ -457,4 +440,3 @@ const Index = () => {
 };
 
 export default Index;
-
