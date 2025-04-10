@@ -4,11 +4,12 @@ import React from 'react';
 const HeroSection = () => {
   return (
     <section 
-      className="h-screen flex items-center justify-center bg-gray-400 pt-16"
+      className="h-screen flex items-center justify-center bg-gray-800 pt-16"
       style={{ 
-        backgroundImage: "url('/public/lovable-uploads/4932971c-9636-445b-8e5b-97bd2a8deaea.png')",
+        backgroundImage: "url('/lovable-uploads/4932971c-9636-445b-8e5b-97bd2a8deaea.png')",
         backgroundSize: 'cover',
-        backgroundPosition: 'center'
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
       }}
     >
       <div className="container mx-auto px-6 relative text-white text-center">
