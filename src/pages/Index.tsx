@@ -79,7 +79,7 @@ const Index = () => {
             </div>
             <div className="relative">
               <img 
-                src="/public/lovable-uploads/42e86008-865e-41f6-9a67-47173f803a1b.png" 
+                src="/lovable-uploads/81555fb6-be8a-469c-b7e0-76f5d8c8613e.png" 
                 alt="Public Label neon sign" 
                 className="rounded-lg shadow-xl w-full"
               />
