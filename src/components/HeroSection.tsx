@@ -1,11 +1,42 @@
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 const HeroSection = () => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [loopCount, setLoopCount] = useState(0);
   
   useEffect(() => {
     setIsLoaded(true);
+  }, []);
+
+  // Handle video looping
+  useEffect(() => {
+    const videoElement = videoRef.current;
+    
+    if (!videoElement) return;
+    
+    const handleVideoEnded = () => {
+      setLoopCount(prevCount => {
+        const newCount = prevCount + 1;
+        
+        if (newCount >= 3) {
+          videoElement.pause();
+          // Ensure we stay on the last frame
+          videoElement.currentTime = videoElement.duration - 0.1;
+        } else {
+          videoElement.play();
+        }
+        
+        return newCount;
+      });
+    };
+    
+    videoElement.addEventListener('ended', handleVideoEnded);
+    
+    return () => {
+      videoElement.removeEventListener('ended', handleVideoEnded);
+    };
   }, []);
 
   return (
@@ -15,9 +46,9 @@ const HeroSection = () => {
       {/* Video background */}
       <div className="absolute inset-0 w-full h-full z-0 bg-black">
         <video
+          ref={videoRef}
           autoPlay
           muted
-          loop
           playsInline
           className="absolute inset-0 w-full h-full object-cover opacity-70"
         >
