@@ -1,4 +1,3 @@
-
 import React from 'react';
 import CaseStudyCard from '../CaseStudyCard';
 import { Card, CardContent } from '../ui/card';
@@ -24,7 +23,7 @@ const ResultsSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => void
             title="Stonewall Kitchen"
             logo="/public/lovable-uploads/dfdec414-2fcb-44c5-969f-5288c5671f93.png"
             metric="+15% CAGR"
-            description="Urban Accents Movie Night Popcorn Set Launch"
+            description="On Amazon for Stonewall Kitchen"
           />
           
           <CaseStudyCard 
@@ -47,4 +46,3 @@ const ResultsSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => void
 };
 
 export default ResultsSection;
-
