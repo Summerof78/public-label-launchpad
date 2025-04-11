@@ -1,3 +1,4 @@
+
 import React from 'react';
 import CaseStudyCard from '../CaseStudyCard';
 import { Card, CardContent } from '../ui/card';
@@ -21,23 +22,26 @@ const ResultsSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => void
         <div className="grid md:grid-cols-3 gap-8">
           <CaseStudyCard 
             title="Stonewall Kitchen"
-            logo="/public/lovable-uploads/dfdec414-2fcb-44c5-969f-5288c5671f93.png"
+            logo="/lovable-uploads/dfdec414-2fcb-44c5-969f-5288c5671f93.png"
             metric="+15% CAGR"
             description="On Amazon for Stonewall Kitchen"
+            link="/case-study/stonewall"
           />
           
           <CaseStudyCard 
             title="Dreyer's"
-            logo="/public/lovable-uploads/eb727cad-cbad-4b44-9bf8-1ff8693dead0.png"
+            logo="/lovable-uploads/eb727cad-cbad-4b44-9bf8-1ff8693dead0.png"
             metric="+8% CAGR"
             description="with Dreyer's portfolio platform"
+            link="/case-study/dreyers"
           />
           
           <CaseStudyCard 
             title="Oreo"
-            logo="/public/lovable-uploads/3f22822d-cc0d-4fcc-a31a-ce9e055f8d28.png"
+            logo="/lovable-uploads/3f22822d-cc0d-4fcc-a31a-ce9e055f8d28.png"
             metric="$4.32 ROAS"
             description="on Oreo's national new item launch"
+            link="/case-study/oreo"
           />
         </div>
       </div>
