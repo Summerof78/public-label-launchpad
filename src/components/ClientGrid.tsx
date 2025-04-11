@@ -21,23 +21,23 @@ const ClientGrid: React.FC<ClientProps> = ({ section, subsection }) => {
     { name: "FEVER-TREE", logo: "/public/lovable-uploads/70713b65-a0fa-477c-bb08-d623129418a7.png", x: 2, y: 1 },
     { name: "Spectrum", logo: "/public/lovable-uploads/adbf9546-52b2-4643-93d8-c1f0279ca7ef.png", x: 3, y: 1 },
     { name: "VIA CAROTA", logo: "/public/lovable-uploads/2c2fb330-1008-417c-9e5f-e8585e2f1862.png", x: 4, y: 1 },
-    { name: "RITTER SPORT", logo: "", x: 5, y: 1 }, // Missing logo
-    { name: "MARS", logo: "", x: 6, y: 1 }, // Missing logo
+    { name: "RITTER SPORT", logo: "/public/lovable-uploads/c5bca9eb-24fc-4186-a6f2-ba37a2437b9e.png", x: 5, y: 1 }, 
+    { name: "MARS", logo: "/public/lovable-uploads/3b347a38-0eb0-46a3-9f52-0bb626656f2e.png", x: 6, y: 1 }, 
     // Row 3
-    { name: "WOW!", logo: "", x: 0, y: 2 }, // Missing logo
-    { name: "Scotts", logo: "", x: 1, y: 2 }, // Missing logo
-    { name: "Dairy Farmers of America", logo: "", x: 2, y: 2 }, // Missing logo
-    { name: "MITSUBISHI", logo: "", x: 3, y: 2 }, // Missing logo
-    { name: "Hilton", logo: "", x: 4, y: 2 }, // Missing logo
-    { name: "STONEWALL KITCHEN", logo: "", x: 5, y: 2 }, // Missing logo
-    { name: "GODIVA", logo: "", x: 6, y: 2 }, // Missing logo
+    { name: "WOW!", logo: "/public/lovable-uploads/60b32c8d-5665-4b31-b203-2c4c79b01431.png", x: 0, y: 2 },
+    { name: "Scotts", logo: "/public/lovable-uploads/9af13ab0-4a56-4fd1-ac8c-6f23c37f3410.png", x: 1, y: 2 },
+    { name: "Dairy Farmers of America", logo: "/public/lovable-uploads/0d532dec-3c61-4880-ba61-a97819360068.png", x: 2, y: 2 },
+    { name: "MITSUBISHI", logo: "/public/lovable-uploads/8d1170e0-2887-49ca-8248-c1ad2363edef.png", x: 3, y: 2 },
+    { name: "Hilton", logo: "/public/lovable-uploads/8f8667ef-ce5a-421e-81ff-2e888d5b1ca7.png", x: 4, y: 2 },
+    { name: "STONEWALL KITCHEN", logo: "/public/lovable-uploads/4869947a-34bd-476f-8299-609c784b326e.png", x: 5, y: 2 },
+    { name: "GODIVA", logo: "/public/lovable-uploads/c4d81af4-e42a-4bdb-a8a4-044ffd86f9b3.png", x: 6, y: 2 },
     // Row 4
-    { name: "TORO", logo: "", x: 0, y: 3 }, // Missing logo
-    { name: "WORKPLACE RESOURCE", logo: "", x: 1, y: 3 }, // Missing logo
-    { name: "CHURCH & DWIGHT", logo: "", x: 2, y: 3 }, // Missing logo
-    { name: "PROXIMO", logo: "", x: 3, y: 3 }, // Missing logo
-    { name: "BRONCO", logo: "", x: 4, y: 3 }, // Missing logo
-    { name: "RBC", logo: "", x: 5, y: 3 }, // Missing logo
+    { name: "TORO", logo: "/public/lovable-uploads/e3f27f54-3806-4080-a92d-22fdfb65db4d.png", x: 0, y: 3 },
+    { name: "WORKPLACE RESOURCE", logo: "/public/lovable-uploads/ce9bc386-6a08-4957-a2b8-0f4165630bae.png", x: 1, y: 3 },
+    { name: "CHURCH & DWIGHT", logo: "/public/lovable-uploads/54895cd7-93ad-4c59-ab2c-95a221b5bef1.png", x: 2, y: 3 },
+    { name: "PROXIMO", logo: "/public/lovable-uploads/f79aaf88-db48-4fea-be8b-908ce51b727e.png", x: 3, y: 3 },
+    { name: "BRONCO", logo: "/public/lovable-uploads/c5bca9eb-24fc-4186-a6f2-ba37a2437b9e.png", x: 4, y: 3 },
+    { name: "RBC", logo: "/public/lovable-uploads/54895cd7-93ad-4c59-ab2c-95a221b5bef1.png", x: 5, y: 3 },
   ];
 
   return (
