@@ -22,7 +22,7 @@ const CapabilitiesSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) =>
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">
-          {/* First image - replaced with new Brick & Click Commerce image */}
+          {/* First image - Brick & Click Commerce */}
           <div className="w-full">
             <img 
               src="/lovable-uploads/40be9247-eeb9-4979-ba78-0e96e3a583d2.png" 
@@ -31,10 +31,10 @@ const CapabilitiesSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) =>
             />
           </div>
           
-          {/* Second image */}
+          {/* Second image - On-Demand Commerce */}
           <div className="w-full">
             <img 
-              src="/lovable-uploads/1845cb7c-7785-4b48-80d0-05ed7065a75e.png" 
+              src="/lovable-uploads/5af9aac3-8c5e-46be-8904-72cdade69329.png" 
               alt="On-Demand Commerce" 
               className="w-full h-auto"
             />
