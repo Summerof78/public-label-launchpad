@@ -1,6 +1,5 @@
 
 import React from 'react';
-import ServiceColumn from '../ServiceColumn';
 
 const CapabilitiesSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => void }) => {
   return (
@@ -23,41 +22,23 @@ const CapabilitiesSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) =>
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">
-          <ServiceColumn
-            title="BRICK & CLICK COMMERCE"
-            description="WINNING AT THE INTERSECTION OF ONLINE & IN-STORE."
-            color="secondary"
-            items={[
-              "Retailer-specific strategy & execution",
-              "Data-driven shopper insights & category growth planning",
-              "Retail media & omnichannel campaign integration",
-              "High-impact content syndication & marketplace SEO",
-              "Dynamic creative built for conversion"
-            ]}
-            tools={[
-              { name: "5t", description: "Custom, retailer-specific omni-plan builder" },
-              { name: "AIM", description: "Monthly share of voice tracking" },
-              { name: "Category Roadmap", description: "Shopper-led forecasting & growth mapping" },
-              { name: "RADaR", description: "Performance analytics & competitive war gaming" }
-            ]}
-          />
+          {/* First image */}
+          <div className="w-full">
+            <img 
+              src="/lovable-uploads/315a290e-c5f7-4c9d-8409-f444ba328f20.png" 
+              alt="Brick & Click Commerce" 
+              className="w-full h-auto"
+            />
+          </div>
           
-          <ServiceColumn
-            title="ON-DEMAND COMMERCE"
-            description="CAPTURING DEMAND, DRIVING REPEAT PURCHASE."
-            color="primary"
-            items={[
-              "E-commerce ecosystem optimization",
-              "Amazon, Instacart, TikTok Shop",
-              "SEO strategy & paid media acceleration",
-              "AI-driven creative & product listing optimization",
-              "DTC demand generation & social commerce consulting"
-            ]}
-            tools={[
-              { name: "PMR", description: "Precision marketplace refinement" },
-              { name: "Resonance", description: "AI-powered message optimization" }
-            ]}
-          />
+          {/* Second image */}
+          <div className="w-full">
+            <img 
+              src="/lovable-uploads/155dacd7-5cd7-41e3-b279-de9d1c0e2a17.png" 
+              alt="On-Demand Commerce" 
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </div>
     </section>
