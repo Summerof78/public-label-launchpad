@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { UserPlus, ShoppingCart, RefreshCcw } from 'lucide-react';
 
 const GrowthFrameworkSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => void }) => {
   return (
@@ -15,11 +14,11 @@ const GrowthFrameworkSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement)
         <div className="grid md:grid-cols-3 gap-8">
           <div className="text-center">
             <div className="bg-primary p-4 inline-block rounded-md mb-4">
-              {/* New customer icon */}
+              {/* Ensure icon paths are correct for production */}
               <img 
-                src="/public/lovable-uploads/f36a1f0e-4aaf-45d2-b621-9aadb3fdb27d.png" 
+                src="/lovable-uploads/f36a1f0e-4aaf-45d2-b621-9aadb3fdb27d.png" 
                 alt="Get New People To Buy Icon" 
-                className="h-12 w-12"
+                className="h-12 w-12 object-contain"
               />
             </div>
             <div className="bg-primary p-3 transform -rotate-3">
@@ -29,11 +28,11 @@ const GrowthFrameworkSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement)
           
           <div className="text-center">
             <div className="bg-primary p-4 inline-block rounded-md mb-4">
-              {/* Cart with dollar sign icon */}
+              {/* Ensure icon paths are correct for production */}
               <img 
-                src="/public/lovable-uploads/2813f202-e9ca-4714-bb3e-7805b362721a.png" 
+                src="/lovable-uploads/2813f202-e9ca-4714-bb3e-7805b362721a.png" 
                 alt="Get Them To Buy More Often Icon" 
-                className="h-12 w-12"
+                className="h-12 w-12 object-contain"
               />
             </div>
             <div className="bg-primary p-3 transform -rotate-3">
@@ -43,11 +42,11 @@ const GrowthFrameworkSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement)
           
           <div className="text-center">
             <div className="bg-primary p-4 inline-block rounded-md mb-4">
-              {/* Shopping basket with reload icon */}
+              {/* Ensure icon paths are correct for production */}
               <img 
-                src="/public/lovable-uploads/69036e8e-8aac-46e2-b3c5-bcaca52893c5.png" 
+                src="/lovable-uploads/69036e8e-8aac-46e2-b3c5-bcaca52893c5.png" 
                 alt="Buy More Per Trip Icon" 
-                className="h-12 w-12"
+                className="h-12 w-12 object-contain"
               />
             </div>
             <div className="bg-primary p-3 transform -rotate-3">
