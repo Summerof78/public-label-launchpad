@@ -22,9 +22,9 @@ const ResultsSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => void
         <div className="grid md:grid-cols-3 gap-8">
           <CaseStudyCard 
             title="Stonewall Kitchen"
-            logo="/public/lovable-uploads/5b9739b7-5f17-4e02-b3a7-0a825cd6a530.png"
+            logo="/public/lovable-uploads/dfdec414-2fcb-44c5-969f-5288c5671f93.png"
             metric="+15% CAGR"
-            description="on Amazon for Stonewall Kitchen"
+            description="Urban Accents Movie Night Popcorn Set Launch"
           />
           
           <CaseStudyCard 
