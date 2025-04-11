@@ -29,7 +29,7 @@ const ResultsSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => void
           
           <CaseStudyCard 
             title="Dreyer's"
-            logo="/public/lovable-uploads/e3f27f54-3806-4080-a92d-22fdfb65db4d.png"
+            logo="/public/lovable-uploads/eb727cad-cbad-4b44-9bf8-1ff8693dead0.png"
             metric="+8% CAGR"
             description="with Dreyer's portfolio platform"
           />
