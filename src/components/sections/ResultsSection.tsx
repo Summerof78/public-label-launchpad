@@ -29,14 +29,14 @@ const ResultsSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => void
           
           <CaseStudyCard 
             title="Dreyer's"
-            logo="/public/lovable-uploads/eb727cad-cbad-4b44-9bf8-1ff8693dead0.png"
+            logo="/public/lovable-uploads/e3f27f54-3806-4080-a92d-22fdfb65db4d.png"
             metric="+8% CAGR"
             description="with Dreyer's portfolio platform"
           />
           
           <CaseStudyCard 
             title="Oreo"
-            logo="/public/lovable-uploads/e4163406-3ecf-4fff-a5c6-937ccb6b5019.png"
+            logo="/public/lovable-uploads/3f22822d-cc0d-4fcc-a31a-ce9e055f8d28.png"
             metric="$4.32 ROAS"
             description="on Oreo's national new item launch"
           />
@@ -47,3 +47,4 @@ const ResultsSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => void
 };
 
 export default ResultsSection;
+
