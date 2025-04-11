@@ -12,7 +12,7 @@ const PerformanceSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => 
         <img 
           src="/public/lovable-uploads/0aab589a-501e-457e-8b39-8babdb875416.png" 
           alt="Real-time results. Aligned incentives." 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain bg-black"
         />
       </div>
       {/* Empty container just to maintain section structure */}
