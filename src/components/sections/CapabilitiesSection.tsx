@@ -22,10 +22,10 @@ const CapabilitiesSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) =>
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">
-          {/* First image */}
+          {/* First image - replaced with new Brick & Click Commerce image */}
           <div className="w-full">
             <img 
-              src="/lovable-uploads/315a290e-c5f7-4c9d-8409-f444ba328f20.png" 
+              src="/lovable-uploads/40be9247-eeb9-4979-ba78-0e96e3a583d2.png" 
               alt="Brick & Click Commerce" 
               className="w-full h-auto"
             />
