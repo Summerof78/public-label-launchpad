@@ -12,16 +12,18 @@ const HeroSection = () => {
     <section 
       className="relative h-screen flex items-center justify-center overflow-hidden bg-black"
     >
-      {/* Dark background image */}
-      <div 
-        className="absolute inset-0 w-full h-full z-0 bg-black"
-        style={{ 
-          backgroundImage: "url('/lovable-uploads/90822740-9b69-4502-a064-a1bb02d3f8ad.png')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          filter: 'brightness(0.7)'
-        }}
-      />
+      {/* Video background */}
+      <div className="absolute inset-0 w-full h-full z-0 bg-black">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-70"
+        >
+          <source src="/HERO commerce in motion video loop .mp4" type="video/mp4" />
+        </video>
+      </div>
       
       {/* Content */}
       <div className="container mx-auto px-6 relative z-20 text-white">
