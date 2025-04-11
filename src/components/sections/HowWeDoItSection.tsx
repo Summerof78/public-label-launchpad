@@ -18,7 +18,7 @@ const HowWeDoItSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => vo
           <div className="text-center">
             <div className="mb-8 flex justify-center">
               <img 
-                src="/lovable-uploads/5617b0f7-69a4-452b-b29d-7a26ce3e9f2b.png" 
+                src="/lovable-uploads/ea548ac2-abf1-482e-951f-775e920e05d0.png" 
                 alt="Strategic Foundation Icon" 
                 className="h-16 w-auto object-contain"
               />
@@ -35,7 +35,7 @@ const HowWeDoItSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => vo
           <div className="text-center">
             <div className="mb-8 flex justify-center">
               <img 
-                src="/lovable-uploads/60b32c8d-5665-4b31-b203-2c4c79b01431.png" 
+                src="/lovable-uploads/8cabad81-8964-45a3-a40a-9513d4fb244d.png" 
                 alt="Seamless Execution Icon" 
                 className="h-16 w-auto object-contain"
               />
@@ -52,7 +52,7 @@ const HowWeDoItSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => vo
           <div className="text-center">
             <div className="mb-8 flex justify-center">
               <img 
-                src="/lovable-uploads/93d7f645-c303-4b80-859c-cabfb2a77a6d.png" 
+                src="/lovable-uploads/88bddcf9-719a-4002-b626-aa95feb2e963.png" 
                 alt="10-5-1 Framework Icon" 
                 className="h-16 w-auto object-contain"
               />
@@ -69,7 +69,7 @@ const HowWeDoItSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => vo
           <div className="text-center">
             <div className="mb-8 flex justify-center">
               <img 
-                src="/lovable-uploads/400e1cb8-1ee9-4df1-b508-d793be9486c8.png" 
+                src="/lovable-uploads/0e35be9b-5423-4e5b-bc73-4f9f1aedff5d.png" 
                 alt="Optimized For Attention Icon" 
                 className="h-16 w-auto object-contain"
               />
