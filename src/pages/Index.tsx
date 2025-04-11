@@ -7,7 +7,6 @@ import AboutSection from '../components/sections/AboutSection';
 import ClientsSection from '../components/sections/ClientsSection';
 import GrowthFrameworkSection from '../components/sections/GrowthFrameworkSection';
 import CapabilitiesSection from '../components/sections/CapabilitiesSection';
-import StrategySection from '../components/sections/StrategySection';
 import HowWeDoItSection from '../components/sections/HowWeDoItSection';
 import ResultsSection from '../components/sections/ResultsSection';
 import PerformanceSection from '../components/sections/PerformanceSection';
@@ -64,9 +63,6 @@ const Index = () => {
       
       {/* Capabilities Section */}
       <CapabilitiesSection addToRefs={addToRefs} />
-      
-      {/* Strategy Section */}
-      <StrategySection addToRefs={addToRefs} />
       
       {/* How We Do It Section */}
       <HowWeDoItSection addToRefs={addToRefs} />
