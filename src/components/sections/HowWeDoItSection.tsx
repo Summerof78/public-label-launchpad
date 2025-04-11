@@ -14,12 +14,13 @@ const HowWeDoItSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => vo
         </div>
         
         <div className="grid md:grid-cols-4 gap-8 mt-10">
+          {/* Strategic Foundation */}
           <div className="text-center">
             <div className="mb-8 flex justify-center">
               <img 
-                src="/public/lovable-uploads/590e74ee-1620-40c3-95ff-5667ccbf1636.png" 
+                src="/lovable-uploads/203c5767-49bd-41eb-ae59-688204d0af2c.png" 
                 alt="Strategic Foundation Icon" 
-                className="h-16"
+                className="h-16 w-auto object-contain"
               />
             </div>
             <div className="bg-primary p-3 transform -rotate-3 mb-6">
@@ -30,12 +31,13 @@ const HowWeDoItSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => vo
             </p>
           </div>
           
+          {/* Seamless Execution */}
           <div className="text-center">
             <div className="mb-8 flex justify-center">
               <img 
-                src="/public/lovable-uploads/590e74ee-1620-40c3-95ff-5667ccbf1636.png" 
+                src="/lovable-uploads/18db4d0e-cb16-4cbb-a2e2-db49a7fc1da4.png" 
                 alt="Seamless Execution Icon" 
-                className="h-16"
+                className="h-16 w-auto object-contain"
               />
             </div>
             <div className="bg-primary p-3 transform -rotate-3 mb-6">
@@ -46,12 +48,13 @@ const HowWeDoItSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => vo
             </p>
           </div>
           
+          {/* 10-5-1 Framework */}
           <div className="text-center">
             <div className="mb-8 flex justify-center">
               <img 
-                src="/public/lovable-uploads/590e74ee-1620-40c3-95ff-5667ccbf1636.png" 
+                src="/lovable-uploads/93d7f645-c303-4b80-859c-cabfb2a77a6d.png" 
                 alt="10-5-1 Framework Icon" 
-                className="h-16"
+                className="h-16 w-auto object-contain"
               />
             </div>
             <div className="bg-primary p-3 transform -rotate-3 mb-6">
@@ -62,12 +65,13 @@ const HowWeDoItSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => vo
             </p>
           </div>
           
+          {/* Optimized For Attention */}
           <div className="text-center">
             <div className="mb-8 flex justify-center">
               <img 
-                src="/public/lovable-uploads/590e74ee-1620-40c3-95ff-5667ccbf1636.png" 
+                src="/lovable-uploads/400e1cb8-1ee9-4df1-b508-d793be9486c8.png" 
                 alt="Optimized For Attention Icon" 
-                className="h-16"
+                className="h-16 w-auto object-contain"
               />
             </div>
             <div className="bg-primary p-3 transform -rotate-3 mb-6">
