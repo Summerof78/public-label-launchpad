@@ -18,12 +18,12 @@ const HowWeDoItSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => vo
           <div className="text-center">
             <div className="mb-8 flex justify-center">
               <img 
-                src="/lovable-uploads/203c5767-49bd-41eb-ae59-688204d0af2c.png" 
+                src="/lovable-uploads/5617b0f7-69a4-452b-b29d-7a26ce3e9f2b.png" 
                 alt="Strategic Foundation Icon" 
                 className="h-16 w-auto object-contain"
               />
             </div>
-            <div className="bg-primary p-3 transform -rotate-3 mb-6">
+            <div className="bg-red-600 p-3 transform -rotate-3 mb-6">
               <h3 className="text-lg font-bold">STRATEGIC FOUNDATION</h3>
             </div>
             <p className="text-sm">
@@ -35,12 +35,12 @@ const HowWeDoItSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => vo
           <div className="text-center">
             <div className="mb-8 flex justify-center">
               <img 
-                src="/lovable-uploads/18db4d0e-cb16-4cbb-a2e2-db49a7fc1da4.png" 
+                src="/lovable-uploads/60b32c8d-5665-4b31-b203-2c4c79b01431.png" 
                 alt="Seamless Execution Icon" 
                 className="h-16 w-auto object-contain"
               />
             </div>
-            <div className="bg-primary p-3 transform -rotate-3 mb-6">
+            <div className="bg-red-600 p-3 transform -rotate-3 mb-6">
               <h3 className="text-lg font-bold">SEAMLESS EXECUTION</h3>
             </div>
             <p className="text-sm">
@@ -57,7 +57,7 @@ const HowWeDoItSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => vo
                 className="h-16 w-auto object-contain"
               />
             </div>
-            <div className="bg-primary p-3 transform -rotate-3 mb-6">
+            <div className="bg-red-600 p-3 transform -rotate-3 mb-6">
               <h3 className="text-lg font-bold">10-5-1 FRAMEWORK</h3>
             </div>
             <p className="text-sm">
@@ -74,7 +74,7 @@ const HowWeDoItSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) => vo
                 className="h-16 w-auto object-contain"
               />
             </div>
-            <div className="bg-primary p-3 transform -rotate-3 mb-6">
+            <div className="bg-red-600 p-3 transform -rotate-3 mb-6">
               <h3 className="text-lg font-bold">OPTIMIZED FOR ATTENTION</h3>
             </div>
             <p className="text-sm">
