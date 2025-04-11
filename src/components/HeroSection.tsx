@@ -5,9 +5,13 @@ const HeroSection = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [loopCount, setLoopCount] = useState(0);
+  const [videoError, setVideoError] = useState(false);
   
   useEffect(() => {
     setIsLoaded(true);
+    
+    // Log to help with debugging
+    console.log("Video path:", "/HERO commerce in motion video loop .mp4");
   }, []);
 
   // Handle video looping
@@ -31,11 +35,18 @@ const HeroSection = () => {
         return newCount;
       });
     };
+
+    const handleVideoError = (e: Event) => {
+      console.error("Video error:", e);
+      setVideoError(true);
+    };
     
     videoElement.addEventListener('ended', handleVideoEnded);
+    videoElement.addEventListener('error', handleVideoError);
     
     return () => {
       videoElement.removeEventListener('ended', handleVideoEnded);
+      videoElement.removeEventListener('error', handleVideoError);
     };
   }, []);
 
@@ -45,17 +56,25 @@ const HeroSection = () => {
     >
       {/* Video background */}
       <div className="absolute inset-0 w-full h-full z-0 bg-black">
-        <video
-          ref={videoRef}
-          autoPlay
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-70"
-        >
-          {/* Use absolute URL path starting with forward slash for published app */}
-          <source src="/HERO commerce in motion video loop .mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        {videoError ? (
+          <div className="absolute inset-0 flex items-center justify-center text-white">
+            <p>Video could not be loaded</p>
+          </div>
+        ) : (
+          <video
+            ref={videoRef}
+            autoPlay
+            muted
+            playsInline
+            preload="auto"
+            className="absolute inset-0 w-full h-full object-cover opacity-70"
+          >
+            {/* Try both absolute and relative paths */}
+            <source src="/HERO commerce in motion video loop .mp4" type="video/mp4" />
+            <source src="HERO commerce in motion video loop .mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        )}
       </div>
       
       {/* Content */}
