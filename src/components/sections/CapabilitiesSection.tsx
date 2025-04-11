@@ -34,7 +34,7 @@ const CapabilitiesSection = ({ addToRefs }: { addToRefs: (el: HTMLDivElement) =>
           {/* Second image */}
           <div className="w-full">
             <img 
-              src="/lovable-uploads/155dacd7-5cd7-41e3-b279-de9d1c0e2a17.png" 
+              src="/lovable-uploads/1845cb7c-7785-4b48-80d0-05ed7065a75e.png" 
               alt="On-Demand Commerce" 
               className="w-full h-auto"
             />
