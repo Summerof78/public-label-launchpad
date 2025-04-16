@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState, useRef } from 'react';
 
 const HeroSection = () => {
@@ -69,9 +68,8 @@ const HeroSection = () => {
             preload="auto"
             className="absolute inset-0 w-full h-full object-cover opacity-70"
           >
-            {/* Try both absolute and relative paths */}
-            <source src="/HERO commerce in motion video loop .mp4" type="video/mp4" />
-            <source src="HERO commerce in motion video loop .mp4" type="video/mp4" />
+            {/* Use URL encoded path to handle spaces in filename */}
+            <source src="/HERO%20commerce%20in%20motion%20video%20loop%20.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         )}
